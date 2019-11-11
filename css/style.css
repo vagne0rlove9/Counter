@@ -3,18 +3,43 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    background: #0F0;
+    font-family: Arial,Serif;
 }
 
 table{
+    width: 80vh;
 	border: solid 1px;
-        border-collapse: collapse;
-	margin: auto;
+    border-collapse: collapse;
+	margin: 0 auto;
+    background: #FFFFFF95;
 }
 	table td{
 		border: solid 1px;
 	}
+    table th{
+        background: #000a;
+        border: solid 1px;
+    }
 
 .formF{
 	text-align: center;
 }
 
+nav {
+    background: white;
+}
+
+a{
+    color: black;
+
+}
+label{
+    display: block;
+    padding-left: 50px;
+}
+
+
+.label1{
+    margin-left: -50px;
+}
