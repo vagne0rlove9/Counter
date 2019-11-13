@@ -43,3 +43,39 @@ label{
 .label1{
     margin-left: -50px;
 }
+
+
+.buttonMenu {
+    background-color: white;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    display: inline-block;
+    color: #404040;
+    line-height: 2;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.buttonMenu:after {
+    display: block;
+    content: "";
+    background-color: #404040;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: relative;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.buttonMenu:hover:after,
+.buttonMenu:focus:after {
+    width: 110%;
+}
