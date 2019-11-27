@@ -1,0 +1,43 @@
+﻿
+<head>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Counter</title>
+</head>
+<body>
+
+<div style="text-align: center; font-size: 25px"><nav><button class="buttonMenu"><a href="index.html">2018</a></button></nav></div>
+
+	<table cellpadding="35px">
+		<tr>
+			<th>
+				Месяц
+			</th>
+			<td>Горячая вода</td>
+			<td>Холодная вода</td>
+		</tr>
+		<tr>
+      <% 12.times do |i| %>
+        <tr>
+          <th><%= @months[i]%></th>
+          <th><%= @counters[i]&.cold%></th>
+          <th><%= @counters[i]&.hot%></th>
+        </tr>
+      <% end %>
+    </tr>
+	</table>
+<br>
+	
+		<form class="formF">
+			<label>Дата</label>
+			<input type="date" name="date" placeholder="Введите дату"/>
+			<label><span class="label">Горячая вода</span>
+			<input type="text" name="water_hot" placeholder="Введите данные счетчика"/></label>
+			<label>Холодная вода
+			<input type="text" name="water_cold" placeholder="Введите данные счетчика"/></label>
+    			<input type="submit" value="Отправить"/>
+		</form>
+	
+
+
+</body>
