@@ -15,13 +15,21 @@
 			</th>
 			<td>Горячая вода</td>
 			<td>Холодная вода</td>
+      <td>Ссылка на удаление</td>
 		</tr>
 		<tr>
       <% 12.times do |i| %>
         <tr>
-          <th><%= @months[i]%></th>
+          <th><%= @counters[i]&.month%></th>
           <th><%= @counters[i]&.cold%></th>
           <th><%= @counters[i]&.hot%></th>
+          <th>
+            <% if @counters[i]  %>
+              <%= link_to 'удалить',
+                          counter_path(@counters[i]),
+                          method: :delete%>
+            <% end %>
+          </th>
         </tr>
       <% end %>
     </tr>
@@ -37,7 +45,7 @@
 			<input type="text" name="water_cold" placeholder="Введите данные счетчика"/></label>
     			<input type="submit" value="Отправить"/>
 		</form>
-	
 
 
+<iframe src="//uma.media/play/embed/e22ac03fd982f961b0b39325861133fb/" width="720" height="405" scrolling="no" frameborder="0" style="width:100%; max-width:720px;"></iframe>
 </body>

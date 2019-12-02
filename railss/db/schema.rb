@@ -10,13 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_27_164619) do
-
-  create_table "counters", force: :cascade do |t|
-    t.string "month"
-    t.integer "cold"
-    t.integer "hot"
-    t.datetime "date"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
