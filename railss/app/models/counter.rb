@@ -1,3 +1,2 @@
 class Counter < ApplicationRecord
-
 end

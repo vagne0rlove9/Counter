@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-    get '/welcome', to: "welcome#index_m"
+  get '/welcome', to: 'welcome#index_m'
 
-    resources :counters
+  resources :counters
 end
